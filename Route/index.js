@@ -6,6 +6,9 @@ const router = express.Router();
 
 
 // routes to  page
+router.get('/',(req,res)=>{
+   return res.redirect('/transaction//all-transactions');
+})
 router.use('/transaction',require('./transaction'));
 router.use('/school',require('./school'));
 
